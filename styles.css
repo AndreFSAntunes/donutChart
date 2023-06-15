@@ -1,0 +1,36 @@
+#graficoDonut {
+    width: 150px;   /* Change the value as per your need */
+    height: 150px;  /* Change the value as per your need */
+}
+
+.container-grafico {
+    display: flex;
+    align-items: center;
+}
+
+.legenda {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: Verdana, sans-serif;
+}
+
+.legenda-icone {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.indicador-progresso {
+    background-color: #00a1ff;
+}
+
+.indicador-total {
+    background-color: #ccc;
+}
