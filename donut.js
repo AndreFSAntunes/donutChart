@@ -16,18 +16,8 @@ function carregarGrafico(atendidas, total) {
         legend: { display: false },
         responsive: false,
         maintainAspectRatio: false,
-        tooltips: {
-            callbacks: {
-                label: function(tooltipItem, data) {
-                    const dataset = data.datasets[tooltipItem.datasetIndex];
-                    const currentValue = dataset.data[tooltipItem.index];
-                    const label = dataset.label ? `${dataset.label}: ` : '';
-                    return label + currentValue;
-                }
-            }
-        },
         plugins: {
-            beforeDraw: function(chart) {
+            beforeDraw: function (chart) {
                 const width = chart.chart.width;
                 const height = chart.chart.height;
                 const ctx = chart.chart.ctx;
